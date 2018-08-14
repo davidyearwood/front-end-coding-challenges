@@ -2,50 +2,198 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 
 <body>
-    <h1 class="title">Best Bank Ever!</h1>
-    <p>Pellentesque habitant morbit tristique senectus et netus et
-        <a href="#">malesuada</a> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-        Donec eu libero sit amet quam egestas semper. Aenean ultricies mit vitae est. Mauris
-        <a href="#">placerat</a> eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-    </p>
-    <h2>Reasons We're Awesome:</h2>
-    <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Aliquam tincidunt mauris eu risus.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Vestibulum auctor dapibus neque.</li>
-    </ul>
-    <ul class="nav-links">
-        <li class="nav-links__item">
-            <a href="#" class="nav-links__link">home</a>
-        </li>
-        <li class="nav-links__item">
-            <a href="#" class="nav-links__link">employee</a>
-        </li>
-        <li class="nav-links__item">
-            <a href="#" class="nav-links__link">company</a>
-        </li>
-        <li class="nav-links__item">
-            <a href="#" class="nav-links__link">services</a>
-        </li>
-        <li class="nav-links__item">
-            <a href="#" class="nav-links__link">contact</a>
-        </li>
-    </ul>
-    <a href="#" class="btn">Login</a>
-
-    <div class="mobile-info">
-        <h2 class="mobile-info__title font-color--purple">Amazing Mobile Info</h2>
-        <p class="mobile-info__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur molestie lacus et dapibus. In aliquam feugiat
-            massa, at malesuada arcu congue sit amet. Sed sodales in lorem fringilla ornare.
-        </p>
+    <div class="bg--blue">
+        <nav>
+            <h1 class="logo" id="logo">
+                <a href="#">
+                    <img src="assets/img/urbank.png" alt="Go to Urbank's Home Page" title="Urbank" />
+                </a>
+            </h1>
+            <ul class="nav-links">
+                <li class="nav-links__item">
+                    <a href="#" class="nav-links__link">home</a>
+                </li>
+                <li class="nav-links__item">
+                    <a href="#" class="nav-links__link">employee</a>
+                </li>
+                <li class="nav-links__item">
+                    <a href="#" class="nav-links__link">company</a>
+                </li>
+                <li class="nav-links__item">
+                    <a href="#" class="nav-links__link">services</a>
+                </li>
+                <li class="nav-links__item">
+                    <a href="#" class="nav-links__link">contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
+
+    <div class="container clearfix" style="margin-top: 4%">
+        <div class="col-75">
+            <h1 class="page-title">Best Bank Ever!</h1>
+            <p>Pellentesque habitant morbit tristique senectus et netus et
+                <a href="#">malesuada</a> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+                amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mit vitae est. Mauris
+                <a href="#">placerat</a> eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+            </p>
+            <div class="list-wrapper">
+                <h2 class="list__title">Reasons We're Awesome:</h2>
+                <ul class="list">
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Aliquam tincidunt mauris eu risus.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                    <li class="list__item">Vestibulum auctor dapibus neque.</li>
+                </ul>
+            </div>
+            <div class="mobile-info">
+                <h2 class="mobile-info__title font-color--purple">Amazing Mobile Info</h2>
+                <p class="mobile-info__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur molestie lacus et dapibus. In aliquam feugiat
+                    massa, at malesuada arcu congue sit amet. Sed sodales in lorem fringilla ornare.
+                </p>
+                <img src="assets/img/iphone.png" alt="" class="img--phone">
+            </div>
+            <section class="rates">
+                <h2 class="font-weight--light">Rates |
+                    <span class="font-weight--regular">Check them out.</span>
+                </h2>
+                <table class="table-data">
+                    <thead class="table-data__thead">
+                        <tr class="table-data__row--white">
+                            <th class="table-data__col table-data__th" aria-label="Bank Name"></th>
+                            <th class="table-data__col table-data__th text-align--right">Annual Percentage Yield</th>
+                            <th class="table-data__col table-data__th text-align--right">Est. Earnings for 1 Year*</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-data__tbody">
+                        <tr class="table-data__row">
+                            <td class="table-data__col">Big Guy Financial</td>
+                            <td class="table-data__col text-align--right">0.75 %</td>
+                            <td class="table-data__col text-align--right">$376.42</td>
+                        </tr>
+                        <tr class="table-data__row">
+                            <td class="table-data__col">Dewey, Cheatam &amp; Howe</td>
+                            <td class="table-data__col text-align--right">0.01 %</td>
+                            <td class="table-data__col text-align--right">$5.00</td>
+                        </tr>
+                        <tr class="table-data__row">
+                            <td class="table-data__col">URBank</td>
+                            <td class="table-data__col text-align--right">0.87 %</td>
+                            <td class="table-data__col text-align--right">$436.89</td>
+                        </tr>
+                        <tr class="table-data__row">
+                            <td class="table-data__col">First Onion</td>
+                            <td class="table-data__col text-align--right ">0.01 %</td>
+                            <td class="table-data__col text-align--right ">$5.00</td>
+                        </tr>
+                        <tr class="table-data__row">
+                            <td class="table-data__col">Bank of Everywhere</td>
+                            <td class="table-data__col text-align--right">0.01 %</td>
+                            <td class="table-data__col text-align--right ">$5.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="table-data__th text-align--right">*Based on $50,000 deposit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <aside class="col-25">
+            <a href="#" class="btn" style="margin-bottom: 30px">Login</a>
+            <div class="tab-widget">
+                <div class="tablist" role="tablist" aria-label="">
+                    <button role="tab" aria-selected="true" aria-controls="news" id="news-tab" tabindex="-1" class="tablist__tab tablist__tab--active">News</button>
+                    <button role="tab" aria-selected="false" aria-controls="archive" id="archive-tab" class="tablist__tab">Archive</button>
+                </div>
+                <section id="news" role="tabpanel" aria-labelledby="news-tab" class="tab-widget__content">
+                    <ul class="news-list">
+                        <li class="news-list__item">
+                            <h2 class="news-list__item__title">
+                                <a href="#" class="link">Lorem ipsum dolor</a>
+                            </h2>
+                            <p class="text">Pellentesque habitat morbi tristique senectus et netus et malesada fames ac turpis</p>
+                        </li>
+                        <li class="news-list__item">
+                            <h2 class="news-list__item__title">
+                                <a href="#" class="link">Lorem ipsum dolor</a>
+                            </h2>
+                            <p class="text">Pellentesque habitat morbi tristique senectus et netus et malesada fames ac turpis</p>
+                        </li>
+                        <li class="news-list__item">
+                            <h2 class="news-list__item__title">
+                                <a href="#" class="link">Lorem ipsum dolor</a>
+                            </h2>
+                            <p class="text">Pellentesque habitat morbi tristique senectus et netus et malesada fames ac turpis</p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="archive" role="tabpanel" class="tab-widget__content" aria-labelledby="archive-tab" hidden="hidden">
+                    <ul class="archive-list">
+                        <li>
+                            <a href="#">Lorem ipsum dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor</a>
+                        </li>
+                        <li>
+                            <a href="#">Lorem ipsum dolor</a>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container clearfix">
+            <p class="copy">
+                <a href="#" class="link">&copy; 2014 URBank</a>
+            </p>
+            <ul class="footer-links">
+                <li class="footer-links__item">
+                    <a href="#" class="footer-links__link">home</a>
+                </li>
+                <li class="footer-links__item">
+                    <a href="#" class="footer-links__link">employee</a>
+                </li>
+                <li class="footer-links__item">
+                    <a href="#" class="footer-links__link">company</a>
+                </li>
+                <li class="footer-links__item">
+                    <a href="#" class="footer-links__link">services</a>
+                </li>
+                <li class="footer-links__item">
+                    <a href="#" class="footer-links__link">contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
