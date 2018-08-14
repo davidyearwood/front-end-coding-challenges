@@ -191,6 +191,10 @@ nav {
     width: calc(100% - 20px);
 }
 
+.tablist {
+    font-family: sans-serif;
+}
+
 .tablist__tab {
     border: 1px solid #eee;
     border-bottom: none;
