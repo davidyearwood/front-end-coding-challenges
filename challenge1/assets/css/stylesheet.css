@@ -1,0 +1,19 @@
+.btn {
+  background-color: #286782;
+  border-radius: 5px;
+  color: #ffffff;
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.5s; }
+
+.btn:focus,
+.btn:hover {
+  background: #1c485b; }
+
+/*# sourceMappingURL=stylesheet.css.map */

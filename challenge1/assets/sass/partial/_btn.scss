@@ -1,0 +1,19 @@
+.btn {
+    background-color: $btn-color--primary;
+    border-radius: 5px;
+    color: $btn-text-color--primary; 
+    display: block; 
+    font-family: $sans-serif;
+    font-size: 1.25em;
+    font-weight: $font-weight--semibold;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.5s; 
+}
+
+.btn:focus,
+.btn:hover {
+    background: darken($btn-color--primary, 10%);
+}
