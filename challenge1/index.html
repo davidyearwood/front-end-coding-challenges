@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-    <title>Dirty Dog's Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="assets/css/stylesheet.css">
+<title>Dirty Dog's Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<link rel="stylesheet" href="assets/css/stylesheet.css">
+
 </html>
 
 <body>
-    <a href="#" class="instagram">#hotdogs</a>
-    <section class="banner">
-        <img class="banner__img" srcset="assets/img/banner-320w.jpg 320w,
+    <header class="masthead">
+        <a href="#" class="instagram">#hotdogs</a>
+        <section class="banner">
+            <img class="banner__img" srcset="assets/img/banner-320w.jpg 320w,
                      assets/img/banner-480w.jpg 480w, 
                      assets/img/banner-800w.jpg 800w,
                      assets/img/banner.jpg 1440w" sizes="(max-width: 320px) 280px
@@ -19,15 +21,16 @@
                     (max-width: 320px) 280px,
                     (max-width: 800px) 780px,
                     1200px" src="assets/img/banner.jpg" alt="">
-    </section>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li class="nav-links__item"><a href="#" class="nav-links__link">MENU</a></li>
-            <li class="nav-links__item"><a href="#" class="nav-links__link">CATERING</a></li>
-            <li class="nav-links__item"><a href="#" class="nav-links__link">ABOUT US</a></li>
-            <li class="nav-links__item"><a href="#" class="nav-links__link">CONTACT</a></li>
-        </ul>
-    </nav>
+        </section>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-links__item"><a href="#" class="nav-links__link">MENU</a></li>
+                <li class="nav-links__item"><a href="#" class="nav-links__link">CATERING</a></li>
+                <li class="nav-links__item"><a href="#" class="nav-links__link">ABOUT US</a></li>
+                <li class="nav-links__item"><a href="#" class="nav-links__link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="intro">
         <img src="assets/img/hotdog-icon.svg" alt="" class="intro__icon">
         <h1 class="intro__title">
@@ -35,15 +38,37 @@
         </h1>
         <a href="#" class="btn">More Dogs 'n Make Em Hot</a>
     </section>
-    <div class="hotdog">
-        <div class="hotdog__text">
-            <h2 class="hotdog__title">Gormet All Beef Hotdogs</h2>
-            <p class="hotdog__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem
-                lacinia quam venenatis vestibulum.</p>
+    <div class="showcases">
+        <div class="product-showcase">
+            <div class="product-showcase__content">
+                <h2 class="product-showcase__title">Gormet All Beef Hotdogs</h2>
+                <p class="product-showcase__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare
+                    sem lacinia quam venenatis vestibulum.</p>
+            </div>
+            <div class="product-showcase__figure">
+                <img class="product-showcase__img" src="assets/img/beef-hotdog.jpg" alt="">
+            </div>
         </div>
-        <!-- <figure class="hotdog__figure">
-            <img class="hotdog__image" src="assets/img/beef-hotdog.jpg" alt="">
-        </figure> -->
+        <div class="product-showcase">
+            <div class="product-showcase__figure">
+                <img class="product-showcase__img" src="assets/img/vegan-hotdog.jpg" alt="">
+            </div>
+            <div class="product-showcase__content">
+                <h2 class="product-showcase__title">Vegan Hotdogs</h2>
+                <p class="product-showcase__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare
+                    sem lacinia quam venenatis vestibulum.</p>
+            </div>
+        </div>
+        <div class="product-showcase">
+            <div class="product-showcase__content">
+                <h2 class="product-showcase__title">Vegitarian Hotdogs</h2>
+                <p class="product-showcase__description">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare
+                    sem lacinia quam venenatis vestibulum.</p>
+            </div>
+            <div class="product-showcase__figure">
+                <img class="product-showcase__img" src="assets/img/vegitarian-hotdog.jpg" alt="">
+            </div>
+        </div>
     </div>
 </body>
 

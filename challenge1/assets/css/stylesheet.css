@@ -6,7 +6,7 @@ html {
 
 body {
   background-color: white;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.45;
   color: #333; }
@@ -85,49 +85,57 @@ small,
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
-.hotdog {
-  align-items: center;
+.product-showcase,
+.product-showcase__figure,
+.product-showcase__img {
+  width: 100%; }
+
+.product-showcase {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  flex-direction: column; }
 
-.hotdog::after {
-  content: " ";
-  display: block;
-  background-image: url(../img/beef-hotdog.jpg);
-  background-size: 100% 100%;
-  width: 50%; }
+.product-showcase__content {
+  padding: 2.441em; }
 
-.hotdog__description {
-  color: #555559;
-  font-size: 1.125em;
-  line-height: 1.5; }
+.product-showcase__img {
+  display: block; }
 
-.hotdog__image {
-  width: 100%;
-  height: 450px; }
-
-.hotdog__figure {
-  margin: 0; }
-
-.hotdog__figure,
-.hotdog__text {
-  width: 50%; }
-
-.hotdog__text {
-  padding: 8em; }
-
-.hotdog__title::before {
-  content: '\2014';
-  position: absolute;
-  top: 0;
-  left: -10%; }
-
-.hotdog__title {
+.product-showcase__title {
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: .8em;
   position: relative; }
 
+.product-showcase__description {
+  margin: 0; }
+
+.product-showcase:nth-child(2) .product-showcase__figure {
+  order: 1; }
+
+@media (min-width: 800px) {
+  .product-showcase {
+    flex-direction: row; }
+
+  .product-showcase:nth-child(2) .product-showcase__figure {
+    order: 0; }
+
+  .product-showcase__content {
+    display: flex;
+    padding: 5.95848em;
+    flex-direction: column;
+    justify-content: center; }
+
+  .product-showcase__content,
+  .product-showcase__figure {
+    width: 50%; }
+
+  .product-showcase__title::before {
+    content: '\2014';
+    position: absolute;
+    left: -1.563em; } }
+@media (min-width: 1350px) {
+  .product-showcase__content {
+    padding: 9.764em; } }
 .intro {
   align-items: center;
   background: #fbfafa;
