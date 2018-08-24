@@ -194,4 +194,39 @@ small,
   vertical-align: middle;
   margin-right: .4em; }
 
+.contact-list {
+  list-style-type: none;
+  padding-left: 0; }
+
+.contact-list__item {
+  margin-bottom: .4em; }
+
+@media (min-width: 800px) {
+  .contact-list {
+    text-align: right; } }
+@media (min-width: 1350px) {
+  .contact-list__item {
+    display: inline-block; }
+
+  .contact-list__item::after {
+    content: "|";
+    margin-right: .8em;
+    margin-left: .8em; }
+
+  .contact-list__item:last-child::after {
+    content: "";
+    margin: 0; } }
+footer {
+  padding: 1em;
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+
+@media (min-width: 800px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between; } }
+
 /*# sourceMappingURL=stylesheet.css.map */

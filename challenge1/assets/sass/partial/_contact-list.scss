@@ -1,0 +1,30 @@
+.contact-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-list__item {
+    margin-bottom: .4em;
+}
+
+@media (min-width: $breakpoint--tablet) {
+    .contact-list {
+        text-align: right;
+    }
+}
+
+@media (min-width: $breakpoint--desktop) {
+    .contact-list__item {
+        display: inline-block;
+    }
+    .contact-list__item::after {
+        content: "|";
+        margin-right: .8em;
+        margin-left: .8em;
+    }
+
+    .contact-list__item:last-child::after {
+        content: "";
+        margin: 0;
+    }
+}
