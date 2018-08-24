@@ -153,4 +153,16 @@ small,
   font-weight: 300;
   text-align: center; }
 
+.banner {
+  width: 100%; }
+
+.banner__img {
+  width: 100%; }
+
+.banner__picture {
+  width: 100%; }
+
+.navbar {
+  width: 100%; }
+
 /*# sourceMappingURL=stylesheet.css.map */
