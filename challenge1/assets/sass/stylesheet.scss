@@ -1,4 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 @import 'variables'; 
+@import 'global/typography';
 @import 'partial/btn';
 @import 'partial/nav-links';
-
+@import 'partial/title';
+@import 'partial/hotdog';
+@import 'partial/intro';

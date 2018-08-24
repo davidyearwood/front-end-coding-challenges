@@ -1,0 +1,51 @@
+.hotdog {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: $sans-serif;
+}
+
+.hotdog::after {
+    content: " ";
+    display: block;
+    background-image: url(../img/beef-hotdog.jpg);
+    background-size: 100% 100%;
+    width: 50%;
+}
+
+.hotdog__description {
+    color: #555559;
+    font-size: 1.125em;
+    line-height: 1.5;
+}
+
+.hotdog__image {
+    width: 100%; 
+    height: 450px;
+}
+
+.hotdog__figure {
+    margin: 0;
+}
+
+.hotdog__figure,
+.hotdog__text {
+    width: 50%;
+}
+
+.hotdog__text {
+    padding: 8em;
+}
+
+.hotdog__title::before {
+    content: '\2014';
+    position: absolute;
+    top: 0;
+    left: -10%;
+}
+
+.hotdog__title {
+    font-weight: $font-weight--bold;
+    position: relative;
+}

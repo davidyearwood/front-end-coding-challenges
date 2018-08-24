@@ -1,0 +1,28 @@
+.intro {
+    align-items: center;
+    background: #fbfafa;
+    display: flex;
+    justify-content: center;
+    min-height: 55vh;
+    padding-bottom: 2.441em; 
+    padding-top: 2.441em;
+    flex-direction: column;
+    width: 100%;  
+}
+
+.intro__icon {
+    width: 100%;
+    max-width: 65px;
+}
+
+.intro__title {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1.25em;
+    margin-top: .4em;
+    line-height: 1.35;
+    font-family: $sans-serif;
+    font-weight: $font-weight--light;
+    text-align: center;
+}
+
