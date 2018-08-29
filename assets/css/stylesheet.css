@@ -20,6 +20,12 @@ p {
     margin-top: 14px;
 }
 
+.archive-list > li > a {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none; 
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -195,20 +201,34 @@ nav {
     font-family: sans-serif;
 }
 
+.tablist::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 .tablist__tab {
     border: 1px solid #eee;
     border-bottom: none;
     background-color: rgba(193, 215, 197, .7);
     color: #4B8EBD;
     cursor: pointer;
+    float: left;
     font-size: 16px;
     padding: 10px;
+    position: relative;
+    top: .7em;
 }
+
+
 
 .tablist__tab--active {
     background-color: #f6f6f6;
     color: gray;
     padding: 15px;
+    top: 0;
+    border-bottom: 0;
 }
 
 .table-data {

@@ -79,9 +79,9 @@
         <aside class="col-25">
             <a href="#" class="btn" style="margin-bottom: 30px">Login</a>
             <div class="tab-widget">
-                <div class="tablist" role="tablist" aria-label="">
-                    <button role="tab" aria-selected="true" aria-controls="news" id="news-tab" tabindex="-1" class="tablist__tab tablist__tab--active">News</button>
-                    <button role="tab" aria-selected="false" aria-controls="archive" id="archive-tab" class="tablist__tab">Archive</button>
+                <div class="tablist" role="tablist" aria-label="" id="tablist">
+                    <button role="tab" aria-selected="true" aria-controls="news" id="news-tab" class="tablist__tab tablist__tab--active">News</button>
+                    <button role="tab" aria-selected="false" aria-controls="archive" id="archive-tab" class="tablist__tab" tabindex="-1">Archive</button>
                 </div>
                 <section id="news" role="tabpanel" aria-labelledby="news-tab" class="tab-widget__content">
                     <ul class="news-list">
@@ -162,7 +162,10 @@
             </ul>
         </div>
     </footer>
+
+
     <script src="assets/js/rate-table.js"></script>
+    <script src="assets/js/tabs.js"></script>
 </body>
 
 </html>
