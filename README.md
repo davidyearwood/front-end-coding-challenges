@@ -21,12 +21,12 @@ Your challenge is to render this layout design as a fully functional web page us
 
 ### Technical Requirements
 
-* Anchors on the page can just have “#” as their href.
-* Only jQuery & vanilla javascript allowed (no plugins).
+* Anchors on the page can just have “#” as their href. [x]
+* Only jQuery & vanilla javascript allowed (no plugins). [x]
 * No CSS libraries/frameworks may be used, however CSS (pre)processors like Sass are welcome for compiling your own css.
-*	Rate table must be built-out and ordered correctly by consuming provided JSON file.
-* Page should be responsive.
-* Bonus-points for accessibility!
+*	Rate table must be built-out and ordered correctly by consuming provided JSON file. [x]
+* Page should be responsive. [x]
+* Bonus-points for accessibility! <-- working on it
 
 ### Submitting Your Completed Challenge
 
