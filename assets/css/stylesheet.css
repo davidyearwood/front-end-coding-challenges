@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 a {
     color: #4B8EBD;
 }
@@ -24,10 +25,10 @@ p {
     margin-top: 14px;
 }
 
-.archive-list > li > a {
+.archive-list>li>a {
     font-weight: bold;
     font-size: 1.1em;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .container {
@@ -92,12 +93,13 @@ footer {
     display: block;
 }
 
-.hide {
-    display: none;
-}
 
 .img--phone {
     display: none;
+}
+
+.is-active {
+    display: block !important;
 }
 
 .logo {
@@ -131,10 +133,11 @@ footer {
 .login-form__input-wrapper {
     margin-bottom: 1em;
 }
+
 .login-form__label {
     display: inline-block;
     font-size: .85em;
-    vertical-align: middle;   
+    vertical-align: middle;
     width: 25%;
 }
 
@@ -168,14 +171,16 @@ footer {
     right: 1rem;
     top: 0.5rem;
     width: 1.7rem;
-
 }
 
-.modal__close-icon {
+.modal__close-btn--icon::after {
+    background-image: url(../img/close-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: " ";
+    display: block;
+    height: 100%;
     width: 100%;
-}
-.modal__close-icon path {
-    fill: #4B8EBD;
 }
 
 .modal__title {
@@ -246,6 +251,7 @@ nav {
 }
 
 .overlay {
+    display: none;
     position: fixed;
     top: 0;
     background: rgba(0, 0, 0, .5);
@@ -283,7 +289,6 @@ nav {
     clear: both;
 }
 
-
 .tablist__tab {
     border: 1px solid #eee;
     border-bottom: none;
@@ -296,8 +301,6 @@ nav {
     position: relative;
     top: .7em;
 }
-
-
 
 .tablist__tab--active {
     background-color: #f6f6f6;

@@ -1,24 +1,12 @@
 (function() {
     "use strict";
+    var toggleButtons = document.getElementsByClassName('js-urbank-toggle');
 
-    var modalClose = document.getElementById('close-login-btn');
-    var loginBtn = document.getElementById('login-btn');
-
-    modalClose.addEventListener('click', function(e) {
-        var elementNode = e.target; 
-
-        while(elementNode !== null && !elementNode.classList.contains('overlay')) {
-            elementNode = elementNode.parentNode;
-        }
-
-        if (elementNode.classList.contains('overlay')) {
-            elementNode.classList.toggle('hide');
-        }
+    Array.prototype.forEach.call(toggleButtons, function(element) {
+        element.addEventListener('click', function(e) {
+            var target = document.getElementById(e.target.dataset.target); 
+            target.classList.toggle('is-active');
+        });
     });
 
-    loginBtn.addEventListener('click', function(e) {
-        var targetElement = document.getElementById(e.target.getAttribute('data-target'));
-        
-        targetElement.classList.toggle('active');
-    });
 })();
