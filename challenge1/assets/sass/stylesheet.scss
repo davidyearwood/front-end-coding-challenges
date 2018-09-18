@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+@import 'variables'; 
+@import 'global/typography';
+@import 'partial/btn';
+@import 'partial/nav-links';
+@import 'partial/title';
+@import 'partial/product-showcase';
+@import 'partial/intro';
+@import 'partial/banner';
+@import 'partial/navbar';
+@import 'partial/instagram';
+@import 'partial/contact-list';
+@import 'partial/footer';

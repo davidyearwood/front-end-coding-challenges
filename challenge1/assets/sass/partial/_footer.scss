@@ -1,0 +1,15 @@
+footer {
+    padding: 1em;
+    background: $footer-bg-color;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; 
+}
+
+@media (min-width: $breakpoint--tablet) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
