@@ -19,6 +19,18 @@ p {
     font-family: sans-serif;
 }
 
+h1,
+h2,
+h3,
+label,
+p {
+    color: #505050; 
+}
+
+p {
+    font-size: 1em; 
+    line-height: 1.65;
+}
 .archive-list {
     list-style-type: none;
     padding-left: 0;
