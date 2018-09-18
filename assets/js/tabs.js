@@ -4,10 +4,7 @@
         tablistButtons = toArray(tablist.children),
         tabContents = toArray(document.getElementsByClassName('tab-widget__content'));
 
-    // When tab is clicked 
-    // The tab becomes active, and all other tabs become deactive 
-    // The tab aria-selected is set to true, all others are set to false 
-    // The tab's section is displayed, all other sections are not displayed
+    
     tablist.addEventListener("click", function (e) {
         if (e.target.nodeName !== "BUTTON") {
             return false;
