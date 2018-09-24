@@ -20,11 +20,13 @@
         }
     }
 
-    function createTableBody(el, classNames = "") {
+    function createTableBody(el, classNames) {
+        classNames = (classNames) ? classNames : "";          
         return "<tbody class='" + classNames + "'>" + el + "</tbody>";
     }
 
-    function createTableCol(el, classNames = "") {
+    function createTableCol(el, classNames) {
+        classNames = (classNames) ? classNames : "";          
         return "<td class='" + classNames + "'>" + el + "</td>";
     }
 
@@ -40,7 +42,8 @@
         return createTableBody($rates.join(''), "table-data__tbody");
     }
 
-    function createTableRow(el, classNames = "") {
+    function createTableRow(el, classNames) {
+        classNames = (classNames) ? classNames : "";  
         return "<tr class='" + classNames + "'>" + el + "</tr>";
     }
 
