@@ -378,11 +378,15 @@ footer {
 }
 
 .font-weight--light {
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .font-weight--regular {
     font-weight: 400;
+}
+
+.font-weight--bold {
+    font-weight: 600;
 }
 
 .text-align--right {
