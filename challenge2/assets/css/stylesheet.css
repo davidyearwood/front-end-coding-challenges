@@ -51,7 +51,7 @@ p {
 .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 960px;
+    max-width: 1100px;
     width: 95%;
 }
 
@@ -87,6 +87,7 @@ button.btn {
 
 footer {
     background: #eee;
+    padding-bottom: 3rem;
 }
 
 .footer-links {
@@ -287,7 +288,7 @@ footer {
     font-size: 2.5rem;
     font-weight: lighter;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .rates {
@@ -413,7 +414,6 @@ footer {
 
 .text {
     color: #505050;
-    font-size: .875em;
     line-height: 1.65;
     margin: 0;
 }
