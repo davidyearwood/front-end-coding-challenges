@@ -1,5 +1,5 @@
 html {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 * {
@@ -29,7 +29,7 @@ p {
 
 p {
     font-size: 1em;
-    line-height: 1.65;
+    line-height: 1.45;
 }
 
 .archive-list {
@@ -232,7 +232,7 @@ footer {
 .mobile-info__title {
     color: #5B145D;
     font-family: sans-serif;
-    font-size: 1.125em;
+    font-size: 1.35em;
     margin: 0;
     margin-bottom: 0.5em;
 }
@@ -288,7 +288,7 @@ footer {
     font-size: 2.5rem;
     font-weight: lighter;
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .rates {
@@ -296,6 +296,9 @@ footer {
     margin-bottom: 70px;
 }
 
+.rates__title {
+    font-size: 2rem;
+}
 .special-note {
     color: gray;
     float: right;
@@ -469,7 +472,7 @@ footer {
         float: left;
     }
     .mobile-info__text {
-        width: 77%;
+        width: 80%;
     }
     .nav-links {
         float: right;
