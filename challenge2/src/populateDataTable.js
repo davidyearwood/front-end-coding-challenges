@@ -62,6 +62,6 @@ export default (function (window) {
         .then(appendToTable)
         .catch(function (error) {
             $dataTable.innerHTML = "<p>Rates are unavailable.</p>";
-            console.log(error);
+            console.log(error.message);
         });
 })(window || {});
