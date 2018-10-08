@@ -1,38 +1,29 @@
-<<<<<<< HEAD
-![Ally Logo](http://marketing.tradeking.com/page/ally-and-tradeking-learn-more/i/logo_ally-doitright.png)
-
-# Ally Front-End Development Coding Challenge
-
-### Overview
-
-In the UX Development Team here at Ally, we’re looking to hire developers who are technically skilled and passionate about the Web. To help us gain a better understanding of your strengths in these areas, we’d like for you to complete a coding challenge to get the conversation started. Look at this as your chance to put your best foot forward and give us your best shot!
-
-The principles, concepts, and philosophies of development that we value most and that you need to take into account in your submission are:
-
-*	Web Standards
-*	Semantic Markup
-*	Performance
-*	Accessibility
-
 ### The Challenge
 
 This repository contains a PSD including all page-states as well as [accompanying comps](https://github.com/allylabs/fed-coding-challenge/tree/public/assets/comps) to illustrate how the page should look upon completion. We've also included [assets from the PSD](https://github.com/allylabs/fed-coding-challenge/tree/public/assets/img) in case you don't have Photoshop.
 
 Your challenge is to render this layout design as a fully functional web page using HTML, CSS, and JavaScript. Your page should render perfectly in (at minimum) Chrome, Firefix and IE 9+.
 
-### Technical Requirements
+### How to run this website
+Run `npm install` or the yarn equivalent. 
+You will need to be running this file on a local server. Any local server would do. [I used http-server: a command-line http server.](https://www.npmjs.com/package/http-server)
 
-* Anchors on the page can just have “#” as their href. [x]
-* Only jQuery & vanilla javascript allowed (no plugins). [x]
-* No CSS libraries/frameworks may be used, however CSS (pre)processors like Sass are welcome for compiling your own css.
-*	Rate table must be built-out and ordered correctly by consuming provided JSON file. [x]
-* Page should be responsive. [x]
-* Bonus-points for accessibility! <-- working on it
+### Discussion of technologies used
+To support IE 10+, I used the polyfills below:
+`whatwg-fetch` - https://github.com/github/fetch
+`promise-polyfill` - https://github.com/taylorhakes/promise-polyfill
 
-### Submitting Your Completed Challenge
+`webpack` and `webpack-cli` are used to ebb the amount of HTTP requests
+for script files, minify the file size, and utilize ES6 modules.
 
-Reply to the sender of this challenge with a link to your Github (or other preferred SCM) repository containing your finalized assets. The deadline date/time for this challenge should have accompanied these instructions. If not, please respond to the sender of this challenge to inquire.
+### Requirements for this challenge
+* Anchors on the page can just have “#” as their href. [met]
+* Only jQuery & vanilla javascript allowed (no plugins). [met]
+* No CSS libraries/frameworks may be used, however CSS (pre)processors like Sass are welcome for compiling your own css. [met]
+* Rate table must be built-out and ordered correctly by consuming provided JSON file. [met]
+* Page should be responsive. [met] 
+* Bonus-points for accessibility! [met]
 
-Good luck, give it your best, and we look forward to seeing your work!
+#### A11y bonus points
+I made sure that the HTML was semantically correct, and used ARIA attributes in the tab widget.
 
-=======
